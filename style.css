@@ -1,0 +1,280 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 1px solid #513c28;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: green;
+  }
+
+  .navbar-logo {
+    color: yellow;
+    font-size: 1.3rem;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .navbar-nav a {
+    color: yellow;
+    font-size: 1.3rem;
+    display: inline-block;
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+
+  .navbar-nav a:hover {
+    color: orange;
+  }
+
+  .navbar-logo:hover {
+    color: orange;
+  }
+/* navbar end */
+
+/* main */
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('monas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+}
+
+.main .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem; 
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 130px;
+}
+
+.main .content h1 {
+  color: yellow;
+  font-size: 3rem;
+}
+
+/* about */
+
+.about {
+  padding: 8rem 7% 1.4rem;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.about span {
+  color: orangered;
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 45rem;
+}
+
+.about .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+/* budaya */
+
+.wisata-jakarta {
+  padding: 8rem 7% 1.4rem;
+}
+
+.wisata-jakarta h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.wisata-jakarta span {
+  color: orangered;
+}
+
+.wisata-jakarta .row {
+  display: flex;
+}
+
+.wisata-jakarta .row .wisata-img {
+  flex: 1 1 45rem;
+}
+
+.wisata-jakarta .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.wisata-jakarta .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6
+}
+
+/* profil */
+
+.profil {
+  padding: 8rem 7% 1.4rem;
+}
+
+.profil h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: orangered;
+}
+
+.profil .row {
+  display: flex;
+}
+
+.profil .row .profil-img {
+  flex: 1 1 45rem;
+}
+
+.profil .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.profil .content h3 {
+  margin-bottom: 0.8rem;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.6
+}
+
+/* footer */
+
+footer {
+  background-color: green;
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: yellow;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: yellow;
+  font-weight: 700;
+}
+
+
+
+/* tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+.about .row {
+  flex-wrap: wrap;
+}
+
+.about .row .about-img img {
+  height: 24rem;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.about .row .content {
+  padding: 0;
+}
+
+.about .row .content h3 {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.about .row .content p {
+  font-size: 1.6rem;
+}
+
+.about .row .img {
+  width: 100%;
+}
+
+.wisata-jakarta .row {
+  flex-wrap: wrap;
+}
+
+.wisata-jakarta .row .wisata-img img {
+  height: 24rem;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.wisata-jakarta .row .content {
+  padding: 0;
+}
+
+.wisata-jakarta .row .content p {
+  font-size: 1.6rem;  
+}
+
+.wisata-jakarta .row img {
+  width: 100%;
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}  
